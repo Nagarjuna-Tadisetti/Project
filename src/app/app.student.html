@@ -10,13 +10,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Mark Zuck</a></li>
-        <li><a href="#">Student Personal Details</a></li>
-        <li><a href="#">Student School Details</a></li>
-        <li><a href="#">Attendance</a></li>
-        <li><a href="#">Progress</a></li>
-        <li><a href="#">Home works</a></li>
-        <li><a href="#">Co-curricular activities</a></li>
+        <li class="active"><a routerLink="/student" routerLinkActive="active">Mark Zuck</a></li>
+        <li><a routerLink="/student/personaldetails" routerLinkActive="active">Student Personal Details</a></li>
+        <li><a routerLink="/student/schooldetails" routerLinkActive="active">Student School Details</a></li>
+        <li><a routerLink="/student/attendance" routerLinkActive="active">Attendance</a></li>
+        <li><a routerLink="/student/progress" routerLinkActive="active">Progress</a></li>
+        <li><a routerLink="/student/homeworks" routerLinkActive="active">Home works</a></li>
+        <li><a routerLink="/student/activities" routerLinkActive="active">Co-curricular activities</a></li>
       </ul>
     </div>
   </div>
@@ -27,17 +27,17 @@
     <div class="col-sm-3 sidenav hidden-xs">
       <h2>Logo</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Mark Zuck</a></li>
-        <li><a href="#section3">Student Personal Details</a></li>
-        <li><a href="#section2">Student School Details</a></li>
-        <li><a href="#section3">Attendance</a></li>
-        <li><a href="#section3">Progress</a></li>
-        <li><a href="#section3">Home works</a></li>
-        <li><a href="#section3">Co-curricular activities</a></li>
+        <li class="active"><a routerLink="/student" routerLinkActive="active">Mark Zuck</a></li>
+        <li><a routerLink="/student/personaldetails" routerLinkActive="active">Student Personal Details</a></li>
+        <li><a routerLink="/student/schooldetails" routerLinkActive="active">Student School Details</a></li>
+        <li><a routerLink="/student/attendance" routerLinkActive="active">Attendance</a></li>
+        <li><a routerLink="/student/progress" routerLinkActive="active">Progress</a></li>
+        <li><a routerLink="/student/homeworks" routerLinkActive="active">Home works</a></li>
+        <li><a routerLink="/student/activities" routerLinkActive="active">Co-curricular activities</a></li>
       </ul><br>
     </div>
     <br>
-    
+    <router-outlet></router-outlet>
     <div class="col-sm-9">
       <div class="well">
         <h4>Student details</h4>
