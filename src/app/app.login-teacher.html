@@ -8,17 +8,18 @@
 				<div class="main-login main-center">
 					<form class="form-horizontal" method="post" action="#">
                         <div class="form-group">
-                           <div class="row">
-    <div class="col-sm-6" style="padding-right:2px;padding-left:15px">
+  <div class="row">
+       <div class="col-sm-6" style="padding-right:2px;padding-left:15px">
         <div class="alert alert-default">
-            <strong>Student Login</strong>
-</div>
-                               </div>
+            <strong>Teacher Login</strong>
+        </div>  
+    </div>
     <div class="col-sm-6" style="padding-right:2px;padding-left:15px">
         <div class="alert alert-info">
-  <a [routerLink]="['/login_teacher']"  routerLinkActive="active" style="text-decoration : none"><strong>Teacher Login</strong></a>
-</div>  
-    </div>
+        <a [routerLink]="['/login']"  routerLinkActive="active" style="text-decoration : none"><strong>Student Login</strong></a>
+        </div>
+      </div>
+   
   </div>
                         </div>
 
@@ -46,7 +47,7 @@
 							<button type="button" class="btn btn-primary btn-lg btn-block login-button" (click)="login()">Login</button>
 						</div>
 						<div class="login-register">
-				            <a [routerLink]="['/register']"  routerLinkActive="active" >Register as Student</a>
+				            <a [routerLink]="['/register_teacher']"  routerLinkActive="active" >Register as Teacher</a>
 				         </div>
 					</form>
 				</div>

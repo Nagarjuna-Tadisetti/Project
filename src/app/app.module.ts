@@ -9,11 +9,14 @@ import { AppLogin } from './app.login';
 import { AppStudent } from './app.student';
 import { AppRegister } from './app.register';
 import {AuthGuard} from './app.authguard';
+import {AppLoginTeacher} from './app.login-teacher';
+import { AppRegisterTeacher } from './app.register-teacher';
 import { Activities, Attendance, Homeworks, PersonalDetails, Progress, SchoolDetails} from './student/index';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login',  component: AppLogin },
+  { path: 'login_teacher',  component: AppLoginTeacher },
   { path: 'student',  component: AppStudent, canActivate: [AuthGuard],
     children: [
         { path: 'activities', component: Activities },
@@ -23,13 +26,14 @@ const routes: Routes = [
         { path: 'progress', component: Progress },
         { path: 'schooldetails', component: SchoolDetails },
     ]},
-  { path: 'register',  component: AppRegister, canActivate: [AuthGuard]}
+  { path: 'register',  component: AppRegister, canActivate: [AuthGuard]},
+  { path: 'register_teacher',  component: AppRegisterTeacher, canActivate: [AuthGuard]}
 ];
 
 
 @NgModule({
   declarations: [
-    AppComponent,AppLogin,AppStudent,AppRegister,Activities, Attendance, Homeworks, PersonalDetails, Progress, SchoolDetails
+    AppComponent,AppLogin,AppStudent,AppRegister,Activities, Attendance, Homeworks, PersonalDetails, Progress, SchoolDetails, AppLoginTeacher, AppRegisterTeacher
   ],
   imports: [
     RouterModule.forRoot(routes),
