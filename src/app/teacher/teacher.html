@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="user one">
+</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/teacher" routerLinkActive="active">Steve Jobs</a></li>
+        <li><a routerLink="/teacher/details" routerLinkActive="active">Teacher Details</a></li>
+        <li><a routerLink="/teacher/attendance" routerLinkActive="active">Attendance</a></li>
+        <li><a routerLink="/teacher/homeworks" routerLinkActive="active">Home works</a></li>
+          <li><a routerLink="/login_teacher" routerLinkActive="active">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <div class="user one">
+</div>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a routerLink="/student" routerLinkActive="active">Steve Jobs</a></li>
+         <li><a routerLink="/teacher/details" routerLinkActive="active">Teacher Details</a></li>
+        <li><a routerLink="/teacher/attendance" routerLinkActive="active">Attendance</a></li>
+        <li><a routerLink="/teacher/homeworks" routerLinkActive="active">Home works</a></li>
+          <li><a routerLink="/login_teacher" routerLinkActive="active">Logout</a></li>
+      </ul><br>
+    </div>
+    <br>
+    <router-outlet></router-outlet>
+  </div>
+</div>

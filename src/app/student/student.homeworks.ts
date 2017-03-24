@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./student.homeworks.css']
 })
 export class  Homeworks {
+submitted:number;
+constructor(){
+this.submitted=0;
+}
+submit() : void {
+this.submitted=1;
+}
   
 }
